@@ -15,8 +15,8 @@ public class SpringbootLearning01Application {
 		SpringApplication.run(SpringbootLearning01Application.class, args);
 	}
 
-	@RequestMapping(value = "/" ,produces = "text/plain;charset=UTF-8")
-	Map index(){
+	@RequestMapping(value = "/rest" ,produces = "application/json;charset=UTF-8")
+	public Map<String,Object> index(){
 		Map<String,Object> map = new HashMap<String, Object>();
 		map.put("a",1);
 		map.put("b",2);
