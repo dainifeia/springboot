@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <script th:src="@{/static/js/index.js}"></script>
+</head>
+<body>
+
+<div>
+    username :<input type="text" th:id="${user.name}" th:name="${user.name}" th:value="${user.name}" placeholder="请输入用户名"/>
+    <br/>
+    age:<input th:value="${user.age}"/>
+    <br/>
+    brithday: <input type="text" th:value="${#dates.format(user.brithday,'yyyy/MM/dd')}"/>
+    <br/>
+    desc:   <span th:utext="${user.desc}"></span>
+    <br/>
+
+    <span th:if="${user.sex=='1'}">男</span>
+    <span th:if="${user.sex=='2'}">女</span>
+    <br/>
+    <a href="" th:href="@{http://www.github.com}" >GitHub</a>
+    <select>
+        <option>-请选择-</option>
+        <option th:selected="${user.name eq '张三'}">张三</option>
+        <option th:selected="${user.name eq '李四'}">李四</option>
+        <option th:selected="${user.name eq '王五'}">王五</option>
+    </select>
+
+    <div th:switch="${user.name}">
+     <p th:case="'A'">普通用户</p>
+     <p th:case="#{renren.title}">管理员</p>
+     <p th:case="*">其它</p>
+    </div>
+
+</div>
+
+
+    <form th:action="@{/theaf/addUser}" th:object="${user}" method="post" th:method="post">
+    <input type="text" th:field="*{name}"/>
+        <input type="text"  th:field="*{brithday}" />
+    <input type="submit"/>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <td>用户名</td>
+            <td>年龄</td>
+            <td>性别</td>
+            <td>生日</td>
+        </tr>
+        <tr th:each="list:${userlist}">
+            <td th:text="${list.name}"></td>
+            <td th:text="${list.age}"></td>
+            <td th:text="${list.sex}"></td>
+            <td th:text="${#dates.format(list.brithday,'yyyy-MM-dd hh:mm:ss')}"></td>
+
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
