@@ -1,0 +1,19 @@
+2018-04-11 01:46:24,122 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[327] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96194e92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-11 01:46:24,679 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8080 (http)
+2018-04-11 01:46:24,690 INFO  o.a.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-04-11 01:46:24,691 INFO  o.a.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-11 01:46:24,991 INFO  o.a.c.c.C.[.[.[/springboot][179] - Initializing Spring embedded WebApplicationContext
+2018-04-11 01:46:24,991 INFO  o.s.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 3433 ms
+2018-04-11 01:46:25,016 INFO  com.aididi.druidSource.DruidConfig[18] - init Druid Servlet Configuration 
+2018-04-11 01:46:25,534 INFO  o.s.b.w.s.ServletRegistrationBean[190] - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-04-11 01:46:25,536 INFO  o.s.b.w.s.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-11 01:46:25,537 INFO  o.s.b.w.s.ServletRegistrationBean[190] - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-04-11 01:46:25,537 INFO  o.s.b.w.s.ServletRegistrationBean[193] - Servlet statViewServlet was not registered (possibly already registered?)
+2018-04-11 01:46:25,541 INFO  o.s.b.w.s.FilterRegistrationBean[258] - Mapping filter: 'metricsFilter' to: [/*]
+2018-04-11 01:46:25,541 INFO  o.s.b.w.s.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-11 01:46:25,542 INFO  o.s.b.w.s.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-11 01:46:25,542 INFO  o.s.b.w.s.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-11 01:46:25,542 INFO  o.s.b.w.s.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-11 01:46:25,542 INFO  o.s.b.w.s.FilterRegistrationBean[258] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-04-11 01:46:25,543 INFO  o.s.b.w.s.FilterRegistrationBean[271] - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-04-11 01:46:25,543 INFO  o.s.b.w.s.FilterRegistrationBean[227] - Filter webStatFilter was not registered (possibly already registered?)

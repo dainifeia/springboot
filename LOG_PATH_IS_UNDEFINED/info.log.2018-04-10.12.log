@@ -1,0 +1,16 @@
+2018-04-10 23:43:33,300 INFO  o.s.b.a.e.mvc.EndpointHandlerMapping[543] - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-04-10 23:43:33,973 INFO  o.s.j.e.a.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-04-10 23:43:33,975 INFO  o.s.j.e.a.AnnotationMBeanExporter[916] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-10 23:43:33,982 INFO  o.s.j.e.a.AnnotationMBeanExporter[671] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-04-10 23:43:33,985 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-04-10 23:43:33,992 INFO  o.s.c.s.DefaultLifecycleProcessor[343] - Starting beans in phase 0
+2018-04-10 23:43:33,994 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-04-10 23:43:34,012 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-04-10 23:43:34,023 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-04-10 23:43:34,028 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-04-10 23:43:34,031 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-04-10 23:43:34,035 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-04-10 23:43:34,039 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-04-10 23:43:34,045 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-04-10 23:43:34,048 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-04-10 23:43:34,054 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]

@@ -1,10 +1,13 @@
 package com.aididi.springbootlearning01;
 
 import com.aididi.pojo.UserVo;
-import org.apache.catalina.User;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import springfox.documentation.annotations.ApiIgnore;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -14,7 +17,8 @@ import java.util.List;
 @RequestMapping("theaf")
 public class ThymeleafController {
 
-    @RequestMapping("/index")
+    @RequestMapping(value = "/index",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "/接口测试",notes = "测试接口文档")
     public String index(ModelMap map){
         map.addAttribute("name" ,"testthymeleaf");
         return "index";
@@ -31,7 +35,8 @@ public class ThymeleafController {
         modelMap.addAttribute("user",userVo);
         return "thyme";
     }
-
+    //使用该注解忽略这个API
+    @ApiIgnore
     @RequestMapping("addUser")
     public String addUser(UserVo userVo){
         System.out.println("name:"+userVo.getName());
@@ -40,6 +45,7 @@ public class ThymeleafController {
     }
 
     @RequestMapping("userList")
+    @ApiOperation(value = "测试userlist",notes = "userlist接口文档")
     public String getUserList(ModelMap modelMap){
         List<UserVo> list = new ArrayList<UserVo>();
         UserVo userVo1 = new UserVo();

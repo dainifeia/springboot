@@ -1,0 +1,16 @@
+2018-04-10 23:41:07,123 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-04-10 23:41:07,136 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-04-10 23:41:07,156 INFO  o.a.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-10 23:41:07,173 INFO  o.a.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-10 23:41:07,189 INFO  o.a.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-10 23:41:07,212 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8080 (http)
+2018-04-10 23:41:07,218 INFO  c.a.SpringbootLearning01Application[57] - Started SpringbootLearning01Application in 7.156 seconds (JVM running for 9.714)
+2018-04-10 23:41:07,872 INFO  c.alibaba.druid.pool.DruidDataSource[847] - {dataSource-1} inited
+2018-04-10 23:41:56,203 INFO  o.a.tomcat.util.http.parser.Cookie[179] - A cookie header was received [sysAdmin.company1=HYOSUNG_JX,sysAdmin.sysType1=Hub; CNZZDATA1256912241=559342410-1511413208-%7C1521030510; Hm_lvt_f2fcc1636c33c8e48c709ac2d8f235f5=1521361278] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-04-10 23:41:56,264 INFO  o.a.c.c.C.[.[.[/springboot][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-10 23:41:56,264 INFO  o.s.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-10 23:41:56,340 INFO  o.s.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 75 ms
+2018-04-10 23:43:24,779 INFO  c.a.SpringbootLearning01Application[48] - Starting SpringbootLearning01Application on MS-20170922XKOI with PID 24400 (started by Administrator in D:\intellij idea\springbootlearning\springboot01\springboot)
+2018-04-10 23:43:24,794 INFO  c.a.SpringbootLearning01Application[597] - The following profiles are active: prod
+2018-04-10 23:43:25,142 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@654f0d9c: startup date [Tue Apr 10 23:43:25 GMT+08:00 2018]; root of context hierarchy
+2018-04-10 23:43:25,202 INFO  o.h.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
