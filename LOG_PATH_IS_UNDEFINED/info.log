@@ -1,4 +1,0 @@
-2018-04-11 01:47:23,297 INFO  o.a.tomcat.util.http.parser.Cookie[179] - A cookie header was received [sysAdmin.company1=HYOSUNG_JX,sysAdmin.sysType1=Hub; CNZZDATA1256912241=559342410-1511413208-%7C1521030510; Hm_lvt_f2fcc1636c33c8e48c709ac2d8f235f5=1521361278] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
-2018-04-11 01:47:43,127 INFO  o.a.c.c.C.[.[.[/springboot][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-04-11 01:47:43,128 INFO  o.s.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
-2018-04-11 01:47:43,185 INFO  o.s.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms

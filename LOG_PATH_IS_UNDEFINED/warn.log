@@ -1,2 +1,0 @@
-2018-04-11 01:42:00,336 WARN  t.m.s.mapper.ClassPathMapperScanner[166] - No MyBatis mapper was found in '[com.aididi]' package. Please check your configuration.
-2018-04-11 01:42:00,416 WARN  o.m.s.mapper.ClassPathMapperScanner[166] - No MyBatis mapper was found in '[com.aididi]' package. Please check your configuration.

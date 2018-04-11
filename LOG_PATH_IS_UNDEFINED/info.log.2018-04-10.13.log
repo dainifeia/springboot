@@ -1,9 +1,0 @@
-2018-04-10 23:43:34,057 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
-2018-04-10 23:43:34,069 INFO  o.s.b.a.e.jmx.EndpointMBeanExporter[678] - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
-2018-04-10 23:43:34,089 INFO  o.a.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8080"]
-2018-04-10 23:43:34,108 INFO  o.a.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8080"]
-2018-04-10 23:43:34,124 INFO  o.a.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
-2018-04-10 23:43:34,147 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8080 (http)
-2018-04-10 23:43:34,153 INFO  c.a.SpringbootLearning01Application[57] - Started SpringbootLearning01Application in 9.99 seconds (JVM running for 13.545)
-2018-04-10 23:43:34,700 INFO  c.alibaba.druid.pool.DruidDataSource[847] - {dataSource-1} inited
-2018-04-10 23:43:39,598 INFO  o.a.tomcat.util.http.parser.Cookie[179] - A cookie header was received [sysAdmin.company1=HYOSUNG_JX,sysAdmin.sysType1=Hub; CNZZDATA1256912241=559342410-1511413208-%7C1521030510; Hm_lvt_f2fcc1636c33c8e48c709ac2d8f235f5=1521361278] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
