@@ -1,0 +1,31 @@
+server:
+  context-path: /springboot 
+  port: 8088
+  session:
+    timeout: 60
+  #tomcat:
+    uri-encoding: UTF-8
+    max-threads: 300
+    
+  #增加undertow支持
+#  undertow:
+ #   accesslog:
+#      dir:
+#        logs/access_log
+#      enabled: false
+#      pattern: common # Format pattern for access logs.
+#      prefix: access_log. # Log file name prefix.
+#      rotate: true
+ #     suffix: log
+#添加ssl证书 改用https  
+#自授权证书  (jdk自带)
+#window用户  cmd进入命令行 ,输入如下命令
+#  keytool -genkey -alias undertow  -storetype PKCS12 -keyalg RSA -keysize 2048  -keystore keystore.p12 -validity 3650
+#  如用的tomcat   只需将undertow换成tomcat  就行了
+  ssl:
+    key-store: classpath:keystore.p12 #证书
+    key-store-password: 123456
+    key-store-type: PKCS12
+  
+  
+  

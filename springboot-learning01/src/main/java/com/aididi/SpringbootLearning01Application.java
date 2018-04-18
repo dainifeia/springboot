@@ -9,4 +9,5 @@ public class SpringbootLearning01Application {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootLearning01Application.class, args);
 	}
+	
 }
