@@ -9,13 +9,13 @@
 .settings
 .springBeans
 .sts4-cache
-
+keystore.p12
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-
+keystore.p12
 ### NetBeans ###
 /nbproject/private/
 /build/
