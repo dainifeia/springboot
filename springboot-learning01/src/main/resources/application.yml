@@ -1,12 +1,11 @@
 server:
-  context-path: /springboot 
-  port: 8088
+  context-path: /springboot
+  port: 443
   session:
     timeout: 60
-  #tomcat:
+  tomcat:
     uri-encoding: UTF-8
     max-threads: 300
-    
   #增加undertow支持
 #  undertow:
  #   accesslog:
@@ -20,12 +19,115 @@ server:
 #添加ssl证书 改用https  
 #自授权证书  (jdk自带)
 #window用户  cmd进入命令行 ,输入如下命令
-#  keytool -genkey -alias undertow  -storetype PKCS12 -keyalg RSA -keysize 2048  -keystore keystore.p12 -validity 3650
-#  如用的tomcat   只需将undertow换成tomcat  就行了
+#  keytool -genkey -alias tomcat  -storetype PKCS12 -keyalg RSA -keysize 2048  -keystore keystore.p12 -validity 3650
+#  如用的undertow  只需将tomcat换成undertow 即可
   ssl:
     key-store: classpath:keystore.p12 #证书
     key-store-password: 123456
     key-store-type: PKCS12
-  
-  
-  
+    key-alias: tomcat
+#使用开发环境
+spring:
+  profiles:
+    active: dev
+#使热部署生效
+  #devtools:
+  #  restart:
+   #   enabled: true
+   #   additional-paths:src/main/java
+  thymeleaf:
+    prefix: classpath:/template/
+    suffix: .html
+    mode: HTML5
+    cache: false
+    check-template-location: true
+    content-type: text/html
+    encoding: utf-8
+
+#设置静态资源加载，js,css,jpg,gif等
+  mvc:
+    static-path-pattern:  /static/**
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      min-idle: 1
+      max-active: 20
+      max-wait: 60000
+
+      validation-query: SELECT 1 FROM DUAL
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      min-evictable-idle-time-millis: 25200000
+      remove-abandoned: true
+      time-between-eviction-runs-millis: 60000
+      remove-abandoned-timeout: 1800
+      max-pool-prepared-statement-per-connection-size: 20
+      pool-prepared-statements: true
+      log-abandoned: true
+      filters: stat,wall,log4j
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://47.98.140.195:3306/editor-markdown?useUnicode=true&characterEncoding=utf-8
+      username: mysqltest
+      password: 756qwe-asd123!
+      initial-size: 1
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+  freemarker:
+    allow-session-override: false
+    allow-request-override: false
+    cache: true
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    enabled: true
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: true
+    prefer-file-system-access: true
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+    request-context-attribute: re
+  http:
+    multipart:
+      max-file-size: 10Mb
+      max-request-size: 10Mb
+
+    # 初始化大小，最小，最大
+  #  spring.datasource.minIdle=1
+   # spring.datasource.maxActive=20
+    # 配置获取连接等待超时的时间
+  #  spring.datasource.maxWait=60000
+    # 配置一个连接在池中最小生存的时间，单位是毫秒
+  #  spring.datasource.validationQuery=SELECT 1 FROM DUAL
+   # spring.datasource.testOnBorrow=false
+  #  spring.datasource.testOnReturn=false
+  #  spring.datasource.testWhileIdle=true
+   # spring.datasource.minEvictableIdleTimeMillis=25200000
+    # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+  #  spring.datasource.timeBetweenEvictionRunsMillis=60000
+  #  spring.datasource.removeAbandoned=true
+  #  spring.datasource.removeAbandonedTimeout=1800
+    # 打开PSCache，并且指定每个连接上PSCache的大小
+  #  spring.datasource.poolPreparedStatements=true
+ #   spring.datasource.maxPoolPreparedStatementPerConnectionSize=20
+ #   spring.datasource.logAbandoned=true
+    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+  #  spring.datasource.filters=stat,wall,log4j
+
+#配置日志框架位置
+logging:
+  config: classpath:logback-spring.xml
+#先不开启spring security
+security:
+  basic:
+    enabled: false
+banner:
+  image:
+    location: D:/upload/
+
+#配置mysql数据库
+

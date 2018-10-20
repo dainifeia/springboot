@@ -11,8 +11,8 @@ public enum ResultEnum {
 
     //**********  成功  ************
     CODE_9999("9999", "业务系统调用成功！"),
-    CODE_999999("999999", "交易成功！"),
-    ;
+    CODE_999999("999999", "交易成功！"),;
+
 	
 	private String code;
 	private String msg;

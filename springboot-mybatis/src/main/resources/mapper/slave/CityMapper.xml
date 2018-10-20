@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aididi.dao.slave.CityDao">
+    <resultMap id="BaseResultMapper" type="com.aididi.domain.City">
+        <result column="id" property="id" />
+        <result column="province_id" property="provinceId"/>
+        <result column="city_name" property="cityName" />
+        <result column="description" property="description" />
+    </resultMap>
+    <parameterMap id="City" type="com.aididi.domain.City"/>
+    <sql id="exmpleList">
+        id, province_id, city_name, description
+    </sql>
+    <select id="findByName" resultMap="BaseResultMapper" parameterType="java.lang.String">
+      SELECT
+        <include refid="exmpleList"/>
+      FROM city WHERE city_name = #{cityName}
+    </select>
+</mapper>

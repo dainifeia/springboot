@@ -1,5 +1,5 @@
 # springboot基础教程
-springboot基础样例,欢迎Start  Thanks
+springboot基础样例,欢迎Start and Fork  Thanks
 
 springboot的脚手架工程
 

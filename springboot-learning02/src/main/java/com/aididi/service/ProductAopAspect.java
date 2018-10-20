@@ -6,6 +6,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+
 @Aspect
 @Component
 public class ProductAopAspect {
@@ -14,12 +15,12 @@ public class ProductAopAspect {
 	ProductService productService;
 	
 	// 使用要拦截标注有AdminOnly的注解进行操作
-    @Pointcut("@annotation(AdminOnly)")
+    @Pointcut("@annotation(com.aididi.anno.AdminOnly)")
 	public void adminOnly() {
 		
 	}
     
-    @Before("adminOnly")
+    @Before("adminOnly()")
     public void check() {
     	try {
 			productService.checkAccess();
