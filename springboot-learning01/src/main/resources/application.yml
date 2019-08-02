@@ -67,7 +67,7 @@ spring:
       log-abandoned: true
       filters: stat,wall,log4j
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://47.98.140.195:3306/editor-markdown?useUnicode=true&characterEncoding=utf-8
+      url: jdbc:mysql://localhost:3306/editor-markdown?useUnicode=true&characterEncoding=utf-8
       username: mysqltest
       password: 756qwe-asd123!
       initial-size: 1
